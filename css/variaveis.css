@@ -1,0 +1,9 @@
+:root{
+    --white: #ffffff;
+    --black: #28282B;
+    --nav:rgba(0, 0, 0, .22);
+
+
+    --font-family:'Montserrat', sans-serif;
+    --font-family_complement:'Baskerville', serif;
+}

@@ -1,0 +1,154 @@
+.skills_section{
+    width: 100%;
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+}
+
+.skills_head{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.skills_head p{
+    font-family: var(--font-family_complement);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.info img{
+    width: 27px;
+    height: auto;
+}
+
+.info-p{
+    position:absolute;
+    padding-left: 2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--nav);
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--black);
+}
+.skill_bar .bar .Illustrator{
+    width: 80%;
+    animation: Illustrator 2s;
+}
+@keyframes Illustrator {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .photoshop{
+    width: 65%;
+    animation: photoshop 2s;
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .indesign{
+    width: 65%;
+    animation: indesign 2s;
+}
+@keyframes indesign {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .after-effects{
+    width: 40%;
+    animation: after-effects 2s;
+}
+@keyframes after-effects {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+.skill_bar .bar .adobe-audition{
+    width: 40%;
+    animation: adobe-audition 2s;
+}
+@keyframes adobe-audition {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+.skill_bar .bar .html{
+    width: 25%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 25%;
+    }
+}
+.skill_bar .bar .css{
+    width: 20%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    .skills_main{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}

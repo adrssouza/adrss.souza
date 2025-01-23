@@ -1,0 +1,91 @@
+
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 4rem;
+    row-gap: 2rem;
+    padding: 2rem 6%;
+}
+
+.l-footer img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 1.3rem;  
+}
+
+.title-footer{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: var(--black);
+    /*border-bottom: solid 0.09rem var(--black);
+    font-family: var(--font-family_complement);*/
+    margin-bottom: 0.4rem;
+    margin-left: 0;
+    font-weight: 600; 
+}
+
+.footer-text{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-left: 0;
+    line-height: 1.2rem;
+    color: rgba(0, 0, 0, 0.50);
+    white-space: normal; 
+    word-break:unset;
+    hyphens:auto;
+}
+
+.footer-container ul{
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+
+.contact{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-left: 0;
+    line-height: 1.7rem;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.footer-container li{
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+}
+
+.footer-container a{
+    margin: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.redes-sociais img{
+    float: left;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    width: 25px;
+    height: auto;
+}
+
+.footer__copyright{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 875px){
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
+ @media only screen and (max-width: 465px){
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
